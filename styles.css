@@ -178,10 +178,6 @@ main {
     height: fit-content;
 }
 
-#orange-section .color-box {
-    background: #FF7F08;
-}
-
 .color-section .color-box {
     display: inline-block;
     width: 3rem;
@@ -227,6 +223,7 @@ main {
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
+    color: rgb(90, 87, 87);
 }
 
 .color-section .description:hover {
@@ -243,4 +240,32 @@ main {
 .color-section .header {
     width: 100%;
     display: flex;
+}
+
+#orange-section .color-box {
+    background: #FF7F08;
+}
+
+#dark_blue-section .color-box {
+    background: #1C2260;
+}
+
+#purple-section .color-box {
+    background: #752F77;
+}
+
+#error-section .color-box {
+    background: #B00020;
+}
+
+#yellow-section .color-box {
+    background: #EEB213;
+}
+
+#gray-section .color-box {
+    background: #626B6F;
+}
+
+#gray_light-section .color-box {
+    background: #C8C6BE;
 }
