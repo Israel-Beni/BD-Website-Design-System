@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Rotobo, sans-serif;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -31,7 +32,7 @@ header .header-container {
 }
 
 header .logo-and-title-wrapper {
-    flex: 1 0;
+    flex: auto;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -73,6 +74,7 @@ header #logo {
 
 .main-nav menu {
     display: flex;
+    flex: 0 0;
     justify-content: space-between;
 }
 
@@ -80,15 +82,17 @@ header #logo {
     text-decoration: none;
     text-transform: none;
     color: white;
+    padding: 0 1rem;
 }
 
 /* ----------------------------- MAIN ------------------------*/
 main {
     display: flex;
+    width: 100%;
 }
 /* -------------------- Secondary nav*/
 .secondary-nav {
-    width: 20%
+    width: 15%
 }
 
 .secondary-nav .nav-container {
@@ -125,4 +129,118 @@ main {
 .secondary-nav a {
     text-decoration: none;
     color: #424242;
+}
+
+/*------------------------MAIN SECTION -------------------------*/
+
+.main-content {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.main-content h2 {
+    color: #212121;
+    font-size: 3.5rem;
+}
+
+.main-content p {
+    color: #212121;
+}
+
+.colors-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.colors-section .column {
+    width: 45%;
+}
+
+.colors-section #column2 {
+    margin-right: 5%;
+    justify-self: flext-start;
+}
+
+.color-section {
+    flex: 0 0 40%;
+    padding: 1rem;
+    border: 1px solid #dfdddd;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 2rem #dfdddd, -.1rem -.1rem 2rem #dfdddd;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: .5rem;
+    height: fit-content;
+}
+
+#orange-section .color-box {
+    background: #FF7F08;
+}
+
+.color-section .color-box {
+    display: inline-block;
+    width: 3rem;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.color-section h3 {
+    display: inline-block;
+}
+
+.color-section .description-block {
+    display: flex;
+    max-height: 30vh;
+    flex-direction: column;
+}
+.color-section p {
+}
+
+.color-section .color-values {
+    width: 100%;
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding-inline-start: 0;
+    width: fit-content;
+    font-weight: 600;
+    color: rgb(94, 93, 93);
+}
+
+.color-section .color-values li {
+    font-size: .75rem;
+    display: inline-block;
+    background: rgba(214, 214, 214, 0.575);
+    padding: .3rem;
+    border-radius: .2rem;
+    height: fit-content;
+}
+
+.color-section .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.color-section .description:hover {
+    overflow: visible;
+    white-space: normal;
+}
+
+.color-section:hover {
+    background: rgba(170, 169, 169, 0.253);
+    transition: background .5s ease-in-out;
+    box-shadow: .1rem .1rem 1rem #dfdddd, -.1rem -.1rem 1rem #dfdddd;
+}
+
+.color-section .header {
+    width: 100%;
+    display: flex;
 }
