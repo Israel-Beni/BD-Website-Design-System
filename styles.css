@@ -21,6 +21,10 @@ header {
     color: white;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 header .header-container {
     width: 100%;
@@ -92,7 +96,10 @@ main {
 }
 /* -------------------- Secondary nav*/
 .secondary-nav {
-    width: 15%
+    width: 15%;
+    position: fixed;
+    top: 4rem;
+    z-index: 9;
 }
 
 .secondary-nav .nav-container {
@@ -136,6 +143,12 @@ main {
 .main-content {
     width: 80%;
     margin: 1rem auto;
+    position: relative;
+    left: 5%;
+}
+
+.main-content .sections-container {
+    margin-left: 2rem;
 }
 
 .main-content h2 {
@@ -216,6 +229,7 @@ main {
     padding: .3rem;
     border-radius: .2rem;
     height: fit-content;
+    margin: 1px;
 }
 
 .color-section .description {
