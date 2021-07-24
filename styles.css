@@ -5,6 +5,10 @@ html, body {
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 @font-face {
     font-family: "cool-title";
     src: url('./fonts/Festive-Regular.ttf') format('woff2');
@@ -384,3 +388,4 @@ main {
     font-family: montserrat;
     font-weight: normal;
 }
+
