@@ -28,6 +28,10 @@ body {
     src: url('./fonts/montserrat/montserrat-blackItalic.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "playfair";
+    src: url('.fonts/playfairDisplay-variablefont_wght.ttf') format('truetype');
+}
 
 /* -----------------------HEADER-------------------------------*/
 header {
@@ -389,6 +393,9 @@ main {
     font-weight: normal;
 }
 
+#playfair_display-section {
+    font-family: playfair;
+}
 /* -------Text Styles -------------*/
 
 .text-styles-section {
