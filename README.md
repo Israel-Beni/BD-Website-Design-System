@@ -1,6 +1,6 @@
 # BD Website Design System
 
-The `**BD Website Design System**` comes like a reference website that will to build more websites in the future.
+The `**BD Website Design System**` comes like a reference website that will come handy in buildinf more websites in the future.
 
 ## Table of Contents
 
